@@ -1,0 +1,209 @@
+/* Google Poppins Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Tailwind CSS */
+@import "tailwindcss";
+
+/* Custom CSS Variables */
+@theme {
+    --primary-color: #303e67;
+    --secondary-color: #32375e;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Hide scrollbar for Chrome, Safari and Edge */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.hide-scrollbar {
+    scrollbar-width: none;
+}
+
+/* Hide scrollbar for Internet Explorer and Edge Legacy */
+.hide-scrollbar {
+    -ms-overflow-style: none;
+}
+
+/* For Chrome, Safari, and Edge */
+.custom-scrollbar::-webkit-scrollbar {
+    /* Width of the scrollbar */
+    width: 12px;
+    /* Height of the scrollbar for horizontal scrolling */
+    height: 12px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    /* Color of the scrollbar handle */
+    background-color: #888;
+    /* Round the corners of the scrollbar handle */
+    border-radius: 10px;
+    /* Optional: adds a border around the thumb */
+    border: 3px solid #f1f1f1;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    /* Darker thumb color when hovered */
+    background-color: #555;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    /* Track (background of the scrollbar) */
+    background-color: #f1f1f1;
+    /* Round the corners of the track */
+    border-radius: 10px;
+}
+
+/* For Firefox */
+.custom-scrollbar {
+    /* 'thin', 'auto', or 'none' */
+    scrollbar-width: thin;
+    /* Thumb and track colors */
+    scrollbar-color: #888 #f1f1f1;
+}
+
+.btnBorder {
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+
+/* === Reusable Button Style (Plain CSS version) === */
+.btn {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem; /* 8px */
+  border-radius: 3px;
+  border: 1px solid #9ca3af; /* gray-400 */
+  background-color: #e9e9ed;
+  padding: 0.25rem 0.75rem; /* py-1 px-3 */
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 600; /* font-semibold */
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-0.33em);
+}
+
+/* Buttons BOX-shadow */
+
+.yellow {
+  box-shadow:
+    inset 0 30px 30px -15px rgba(255, 255, 255, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.3),
+    inset 0 1px 20px rgba(0, 0, 0, 0),
+    0 3px 0 #ffa906,
+    0 3px 2px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.lightBlue {
+  box-shadow:
+    inset 0 30px 30px -15px rgba(255, 255, 255, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.3),
+    inset 0 1px 20px rgba(0, 0, 0, 0),
+    0 3px 0 #1b54ff,
+    0 3px 2px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.lightGreen {
+  box-shadow:
+    inset 0 30px 30px -15px rgba(255, 255, 255, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.3),
+    inset 0 1px 20px rgba(0, 0, 0, 0),
+    0 3px 0 #a2c64c,
+    0 3px 2px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.lightCyan {
+  box-shadow:
+    inset 0 30px 30px -15px rgba(255, 255, 255, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.3),
+    inset 0 1px 20px rgba(0, 0, 0, 0),
+    0 3px 0 #2fbbef,
+    0 3px 2px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.Green {
+  box-shadow:
+    inset 0 30px 30px -15px rgba(255, 255, 255, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.3),
+    inset 0 1px 20px rgba(0, 0, 0, 0),
+    0 3px 0 #0f988e,
+    0 3px 2px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.Orange {
+  box-shadow:
+    inset 0 30px 30px -15px rgba(255, 255, 255, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.3),
+    inset 0 1px 20px rgba(0, 0, 0, 0),
+    0 3px 0 #f3872a,
+    0 3px 2px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.Red {
+  box-shadow:
+    inset 0 30px 30px -15px rgba(255, 255, 255, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.3),
+    inset 0 1px 20px rgba(0, 0, 0, 0),
+    0 3px 0 red,
+    0 3px 2px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.Violet {
+  box-shadow:
+    inset 0 30px 30px -15px rgba(255, 255, 255, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.3),
+    inset 0 1px 20px rgba(0, 0, 0, 0),
+    0 3px 0 #3533b3,
+    0 3px 2px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.lightYellow {
+  box-shadow:
+    inset 0 30px 30px -15px rgba(255, 255, 255, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.3),
+    inset 0 1px 20px rgba(0, 0, 0, 0),
+    0 3px 0 #e7b94b,
+    0 3px 2px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.DarkGreen {
+  box-shadow:
+    inset 0 30px 30px -15px rgba(255, 255, 255, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.3),
+    inset 0 1px 20px rgba(0, 0, 0, 0),
+    0 3px 0 #017c39,
+    0 3px 2px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btnBorder {
+  border: 1px solid #999;
+  border-radius: 5px;
+}
