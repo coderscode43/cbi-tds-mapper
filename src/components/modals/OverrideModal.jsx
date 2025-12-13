@@ -1,6 +1,7 @@
 import statusContext from "@/context/statusContext";
 import useLockBodyScroll from "@/hooks/useLockBodyScroll";
 import { useContext } from "react";
+import UniversalAssets from "../component/UniversalAssets";
 
 const OverrideModal = () => {
   const { overrideModal, setOverrideModal, overrideMessage, retryAction } =
@@ -21,11 +22,16 @@ const OverrideModal = () => {
           {/* Red Check Circle */}
 
           <div className="mx-auto flex h-15 w-15 items-center justify-center">
-            <i className="fa-solid fa-circle-exclamation rounded-full bg-white text-5xl text-amber-500"></i>
+            <UniversalAssets
+              asset={"exclamationCircle"}
+              className={"fill-amber-500 text-white"}
+              size={58}
+              stroke={1.3}
+            />
           </div>
 
           {/* Title */}
-          <h2 className="mt-4 text-center text-2xl font-medium text-gray-800">
+          <h2 className="mt-1 text-center text-2xl font-medium text-gray-800">
             Warning
           </h2>
 

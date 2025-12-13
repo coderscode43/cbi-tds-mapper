@@ -1,6 +1,7 @@
 import common from "@/common/common";
 import StickyScrollbarWrapper from "../StickyScrollbarWrapper";
 import TableLoadingSkeleton from "@/components/TableLoadingSkeleton";
+import UniversalAssets from "../component/UniversalAssets";
 
 const DynamicTableAction = ({
   tableHead,
@@ -19,7 +20,7 @@ const DynamicTableAction = ({
         <StickyScrollbarWrapper>
           <table className="w-full text-[14px]">
             <thead
-              className="bg-[#1b54ff]"
+              className="bg-blue-600"
               style={{
                 zIndex: 9,
                 position: "sticky",
@@ -30,7 +31,7 @@ const DynamicTableAction = ({
                 {tableHead?.map(({ key, label }, index) => (
                   <th
                     key={key || index}
-                    className="border-[1.5px] border-gray-300 bg-[#1b54ff] p-2 whitespace-nowrap text-white"
+                    className="border-[1.5px] border-gray-300 bg-blue-600 p-2 whitespace-nowrap text-white"
                   >
                     {label}
                   </th>
@@ -75,10 +76,11 @@ const DynamicTableAction = ({
                         >
                           {key === "action" && data.status === "Pending" ? (
                             // download button Icon shown if the the filetype if filefolder
-                            <i
-                              className="fa-solid fa-xmark cursor-pointer text-lg text-red-500"
-                              onClick={() => handleCancel(data)}
-                            ></i>
+                            <UniversalAssets
+                              asset={"edit"}
+                              className="cursor-pointer text-lg text-red-500"
+                              iconHandler={() => handleCancel(data)}
+                            ></UniversalAssets>
                           ) : formatter ? (
                             formatter(data[key])
                           ) : (

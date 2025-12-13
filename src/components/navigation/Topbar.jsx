@@ -1,3 +1,4 @@
+import UniversalAssets from "../component/UniversalAssets";
 import DropdownMenu from "../DropdownMenu";
 import { TooltipWrapper } from "../Tooltip";
 
@@ -12,30 +13,29 @@ const TopBar = ({ isSidebarOpen, setSideBarOpen }) => {
               aria-label="Toggle sidebar"
             >
               <span className="relative block h-5 w-5">
-                <i
-                  className={`fa-solid fa-bars absolute top-0 left-0 cursor-pointer text-gray-400 transition-all duration-300 ease-in-out ${
+                <UniversalAssets
+                  asset={"menu"}
+                  className={`absolute top-0 left-0 cursor-pointer text-gray-400 transition-all duration-300 ease-in-out ${
                     isSidebarOpen
                       ? "scale-75 rotate-90 opacity-0"
                       : "scale-100 rotate-0 opacity-100"
                   }`}
-                ></i>
-                <i
-                  className={`fa-solid fa-xmark absolute top-0 left-0 cursor-pointer text-gray-400 transition-all duration-300 ease-in-out ${
+                />
+                <UniversalAssets
+                  asset={"x"}
+                  className={`absolute top-0 left-0 cursor-pointer text-gray-400 transition-all duration-300 ease-in-out ${
                     isSidebarOpen
                       ? "scale-100 rotate-0 opacity-100"
                       : "scale-75 -rotate-90 opacity-0"
                   }`}
-                ></i>
+                />
               </span>
             </button>
             <div>
-              <img
+              <UniversalAssets
+                asset={`${import.meta.env.BASE_URL}/images/cbi-bank-logo.png`}
                 className="h-10 w-auto cursor-pointer object-contain"
-                src={`${import.meta.env.BASE_URL}/images/JanaBankLogo_enhanced.png`}
-                alt="Jana Bank Logo"
-                style={{
-                  filter: "contrast(1.1) brightness(1.05)", // Optional enhancement
-                }}
+                alt="CBI Bank Logo"
               />
             </div>
           </div>

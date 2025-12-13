@@ -1,5 +1,5 @@
 import useLockBodyScroll from "@/hooks/useLockBodyScroll";
-import { TriangleAlert, X } from "lucide-react";
+import UniversalAssets from "../component/UniversalAssets";
 
 const ConfirmDeleteModal = ({ isModalOpen, closeModal, handler }) => {
   useLockBodyScroll(isModalOpen); // Hook is now always called properly
@@ -8,11 +8,14 @@ const ConfirmDeleteModal = ({ isModalOpen, closeModal, handler }) => {
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
       <div className="relative w-full max-w-92 rounded-xl bg-white p-6 shadow-xl transition-all">
         <div className="absolute top-5 right-5 cursor-pointer">
-          <X size={22} onClick={closeModal} />
+          <UniversalAssets asset={"x"} iconHandler={closeModal} />
         </div>
         <div className="flex flex-col items-center justify-center gap-2 text-center">
           <div className="rounded-full bg-amber-100 p-3">
-            <TriangleAlert className="text-amber-600" size={22} />
+            <UniversalAssets
+              asset={"triangleAlert"}
+              className="text-amber-600"
+            />
           </div>
 
           <p className="text-xl font-medium">Are you sure?</p>

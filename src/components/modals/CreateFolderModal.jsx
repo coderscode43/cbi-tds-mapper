@@ -1,10 +1,10 @@
 import common from "@/common/common";
 import statusContext from "@/context/statusContext";
-import Toast from "../Toast";
-import { useContext } from "react";
-import { useState } from "react";
-import { useParams } from "react-router-dom";
 import { errorMessage } from "@/lib/utils";
+import { useContext, useState } from "react";
+import { useParams } from "react-router-dom";
+import UniversalAssets from "../component/UniversalAssets";
+import Toast from "../Toast";
 
 const CreateFolderModal = ({
   setFileListData,
@@ -63,7 +63,7 @@ const CreateFolderModal = ({
             onClick={() => closeCreateFolderModal()}
             className="cursor-pointer text-xl text-gray-500 transition hover:text-gray-800"
           >
-            <i className="fa-solid fa-xmark"></i>
+            <UniversalAssets asset={"x"} />
           </button>
         </div>
 
@@ -88,13 +88,13 @@ const CreateFolderModal = ({
             onClick={() => closeCreateFolderModal()}
             className="flex cursor-pointer items-center gap-2 rounded-md bg-red-600 px-4 py-2 text-white hover:bg-red-700"
           >
-            <i className="fa-solid fa-xmark"></i> <span>Cancel</span>
+            <UniversalAssets asset={"x"} /> <span>Cancel</span>
           </button>
           <button
             onClick={() => handleCreateFolder("")}
             className={`flex cursor-pointer items-center gap-2 rounded-md bg-blue-600 px-4 py-2 text-white transition hover:bg-blue-700`}
           >
-            <i className="fa-solid fa-folder-plus"></i>{" "}
+            <UniversalAssets asset={"folderPlus"} className={"fill-white"} />
             <span>Create Folder</span>
           </button>
         </div>

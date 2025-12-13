@@ -1,21 +1,34 @@
+import staticDataContext from "@/context/staticDataContext";
+import { refinedSearchParams } from "@/lib/utils";
 import { useContext, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import DynamicModal from "../DynamicModal";
-import { refinedSearchParams } from "@/lib/utils";
-import staticDataContext from "@/context/staticDataContext";
+import UniversalAssets from "../component/UniversalAssets";
 
 const navItems = [
   {
-    id: "importDeductee",
-    label: "Import Deductee",
-    page: "importDeductee",
-    iconClass: "fa-solid fa-file-import",
+    id: "deposit",
+    label: "Deposit",
+    page: "deposit",
+    icon: "moneybagPlus",
+  },
+  {
+    id: "withdrawal",
+    label: "Withdrawal",
+    page: "withdrawal",
+    icon: "moneybagMinus",
+  },
+  {
+    id: "others",
+    label: "Others",
+    page: "others",
+    icon: "category",
   },
   {
     id: "settings",
     label: "Settings",
     page: "settings",
-    iconClass: "fa-solid fa-gear",
+    icon: "setting",
   },
 ];
 
@@ -39,7 +52,7 @@ const Sidebar = ({ sideBarOpen }) => {
           {/* Scrollable nav items */}
           <div className="hide-scrollbar flex-1 overflow-y-auto">
             <ul className="space-y-1 text-[17px]">
-              {navItems?.map(({ id, label, page, iconClass, textIcon }) => {
+              {navItems?.map(({ id, label, page, icon, textIcon }) => {
                 const searchObj = {
                   pan: ClientPAN,
                   fy: crtFy,
@@ -96,10 +109,10 @@ const Sidebar = ({ sideBarOpen }) => {
                       </div>
 
                       <div>
-                        {iconClass ? (
-                          <i
-                            className={`${iconClass} w-[26px] text-center`}
-                          ></i>
+                        {icon ? (
+                          <>
+                            <UniversalAssets asset={icon} />
+                          </>
                         ) : (
                           <span className="text-md text-center font-semibold">
                             {textIcon}

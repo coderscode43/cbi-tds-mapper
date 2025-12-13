@@ -1,5 +1,6 @@
 import common from "@/common/common";
 import { useParams } from "react-router-dom";
+import UniversalAssets from "./component/UniversalAssets";
 
 const Pagination = ({
   entity,
@@ -38,7 +39,7 @@ const Pagination = ({
           disabled={currentPage === 1}
           onClick={() => handlePagination(currentPage - 1)}
         >
-          <i className="fa-solid fa-chevron-left text-sm"></i>
+          <UniversalAssets asset={"chevronLeft"} />
         </button>
         <div className="flex items-center justify-center">
           <h5>
@@ -51,7 +52,7 @@ const Pagination = ({
           disabled={currentPage === totalPages}
           onClick={() => handlePagination(currentPage + 1)}
         >
-          <i className="fa-solid fa-chevron-right text-sm"></i>
+          <UniversalAssets asset={"chevronRight"} />
         </button>
       </div>
 

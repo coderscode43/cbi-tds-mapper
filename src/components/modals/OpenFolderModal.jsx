@@ -7,6 +7,7 @@ import CreateFolderModal from "./CreateFolderModal";
 import statusContext from "@/context/statusContext";
 import { errorMessage, fileSize } from "@/lib/utils";
 import DynamicTableCheckBoxAction from "../tables/DynamicTableActionCheckbox";
+import UniversalAssets from "../component/UniversalAssets";
 
 const OpenFolderModal = ({
   onClose,
@@ -151,7 +152,7 @@ const OpenFolderModal = ({
               onClick={onClose}
               className="cursor-pointer text-xl text-gray-600"
             >
-              <i className="fa-solid fa-xmark"></i>
+              <UniversalAssets asset={"x"} />
             </button>
           </div>
 
@@ -160,24 +161,38 @@ const OpenFolderModal = ({
             {/* Top Buttons */}
             <div className="flex justify-end gap-3">
               <button
-                className="cursor-pointer rounded-lg bg-gradient-to-r from-cyan-500/95 to-blue-600 px-4 py-2 text-[16px] font-semibold text-white shadow-md transition-all duration-300 ease-in-out hover:scale-105 hover:from-cyan-600 hover:to-blue-700 hover:shadow-lg"
                 onClick={() => setShowAddFolderModal(true)}
+                className="flex cursor-pointer items-center gap-1 rounded-md border border-amber-500 bg-amber-500 px-2 py-1.5 text-white shadow-sm transition-all duration-300 hover:bg-amber-600 hover:shadow-md"
               >
-                <i className="fa-solid fa-folder"></i>&nbsp;&nbsp;
+                <UniversalAssets
+                  asset={"folder"}
+                  className={"fill-white"}
+                  size={22}
+                />
                 <span>Add Folder</span>
               </button>
+
               <button
-                className="cursor-pointer space-x-1 rounded-md bg-gradient-to-r from-red-500 to-red-800 px-4 py-2 font-semibold text-white shadow-md transition-all duration-300 ease-in-out hover:scale-105 hover:from-red-700 hover:to-red-500 hover:shadow-lg"
                 onClick={() => setShowAddDocumentModal(true)}
+                className="flex cursor-pointer items-center gap-1 rounded-md border border-blue-500 bg-blue-500 px-2 py-1.5 text-white shadow-sm transition-all duration-300 hover:bg-blue-600 hover:shadow-md"
               >
-                <i className="fa-solid fa-file"></i>&nbsp;
+                <UniversalAssets
+                  asset={"file"}
+                  className={"fill-white"}
+                  size={22}
+                />
                 <span>Add Document</span>
               </button>
+
               <button
-                className="cursor-pointer space-x-1 rounded-md bg-gradient-to-r from-green-500 to-green-800 px-4 py-2 font-semibold text-white shadow-md transition-all duration-300 ease-in-out hover:scale-105 hover:from-green-700 hover:to-green-500 hover:shadow-lg"
                 onClick={() => setShowCreateFolderModal(true)}
+                className="flex cursor-pointer items-center gap-1 rounded-md border border-teal-500 bg-teal-500 px-2 py-1.5 text-white shadow-sm transition-all duration-300 hover:bg-teal-600 hover:shadow-md"
               >
-                <i className="fa-solid fa-folder-plus"></i>&nbsp;
+                <UniversalAssets
+                  asset={"folderPlus"}
+                  className={"fill-white"}
+                  size={22}
+                />
                 <span>Create Folder</span>
               </button>
             </div>
@@ -194,10 +209,10 @@ const OpenFolderModal = ({
                 onChange={(e) => setLastLocation(e.target.value)}
               />
               <button
-                className="cursor-pointer space-x-1 rounded-md bg-green-500 px-3 py-1.5 text-white hover:bg-green-600"
                 onClick={handleSearch}
+                className="flex cursor-pointer items-center gap-1 rounded-md border border-green-500 bg-green-500 px-2 py-1.5 text-white shadow-sm transition-all duration-300 hover:bg-green-600 hover:shadow-md"
               >
-                <i className="fa-solid fa-magnifying-glass"></i>
+                <UniversalAssets asset={"search"} />
               </button>
             </div>
 
@@ -218,23 +233,26 @@ const OpenFolderModal = ({
           <div className="flex justify-end gap-3 bg-blue-100 px-6 py-4">
             <button
               onClick={handleGenerateZip}
-              className="cursor-pointer rounded-lg bg-gradient-to-r from-cyan-500/95 to-blue-600 px-4 py-2 text-[16px] font-semibold text-white shadow-md transition-all duration-300 ease-in-out hover:scale-105 hover:from-cyan-600 hover:to-blue-700 hover:shadow-lg"
+              className="flex cursor-pointer items-center gap-1 rounded-md border border-sky-500 bg-sky-500 px-2 py-1.5 text-white shadow-sm transition-all duration-300 hover:bg-sky-600 hover:shadow-md"
             >
-              <i className="fa-solid fa-file-zipper"></i>&nbsp;&nbsp;
+              <UniversalAssets asset={"fileZip"} />
               <span>Generate Zip</span>
             </button>
+
             <button
               onClick={() => handleDelete()}
-              className="cursor-pointer space-x-1 rounded-md bg-gradient-to-r from-red-500 to-red-800 px-4 py-2 font-semibold text-white shadow-md transition-all duration-300 ease-in-out hover:scale-105 hover:from-red-700 hover:to-red-500 hover:shadow-lg"
+              className="flex cursor-pointer items-center gap-1 rounded-md border border-red-500 bg-red-500 px-2 py-1.5 text-white shadow-sm transition-all duration-300 hover:bg-red-600 hover:shadow-md"
             >
-              <i className="fa-solid fa-trash"></i>&nbsp;
+              <UniversalAssets asset={"trash"} />
               <span>Delete</span>
             </button>
+
             <button
-              className="cursor-pointer space-x-1 rounded-md bg-gradient-to-r from-gray-500 to-gray-800 px-4 py-2 font-semibold text-white shadow-md transition-all duration-300 ease-in-out hover:scale-105 hover:from-gray-700 hover:to-gray-500 hover:shadow-lg"
               onClick={handleBack}
+              className="flex cursor-pointer items-center gap-1 rounded-md border border-slate-500 bg-slate-500 px-2 py-1.5 text-white shadow-sm transition-all duration-300 hover:bg-slate-600 hover:shadow-md"
             >
-              <i className="fa-solid fa-arrow-left"></i> <span>Back</span>
+              <UniversalAssets asset={"arrowLeft"} />
+              <span>Back</span>
             </button>
           </div>
         </div>

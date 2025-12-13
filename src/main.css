@@ -6,64 +6,64 @@
 
 /* Custom CSS Variables */
 @theme {
-    --primary-color: #303e67;
-    --secondary-color: #32375e;
+  --primary-color: #303e67;
+  --secondary-color: #32375e;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Hide scrollbar for Chrome, Safari and Edge */
 .hide-scrollbar::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 /* Hide scrollbar for Firefox */
 .hide-scrollbar {
-    scrollbar-width: none;
+  scrollbar-width: none;
 }
 
 /* Hide scrollbar for Internet Explorer and Edge Legacy */
 .hide-scrollbar {
-    -ms-overflow-style: none;
+  -ms-overflow-style: none;
 }
 
 /* For Chrome, Safari, and Edge */
 .custom-scrollbar::-webkit-scrollbar {
-    /* Width of the scrollbar */
-    width: 12px;
-    /* Height of the scrollbar for horizontal scrolling */
-    height: 12px;
+  /* Width of the scrollbar */
+  width: 12px;
+  /* Height of the scrollbar for horizontal scrolling */
+  height: 12px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-    /* Color of the scrollbar handle */
-    background-color: #888;
-    /* Round the corners of the scrollbar handle */
-    border-radius: 10px;
-    /* Optional: adds a border around the thumb */
-    border: 3px solid #f1f1f1;
+  /* Color of the scrollbar handle */
+  background-color: #888;
+  /* Round the corners of the scrollbar handle */
+  border-radius: 10px;
+  /* Optional: adds a border around the thumb */
+  border: 3px solid #f1f1f1;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-    /* Darker thumb color when hovered */
-    background-color: #555;
+  /* Darker thumb color when hovered */
+  background-color: #555;
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
-    /* Track (background of the scrollbar) */
-    background-color: #f1f1f1;
-    /* Round the corners of the track */
-    border-radius: 10px;
+  /* Track (background of the scrollbar) */
+  background-color: #f1f1f1;
+  /* Round the corners of the track */
+  border-radius: 10px;
 }
 
 /* For Firefox */
 .custom-scrollbar {
-    /* 'thin', 'auto', or 'none' */
-    scrollbar-width: thin;
-    /* Thumb and track colors */
-    scrollbar-color: #888 #f1f1f1;
+  /* 'thin', 'auto', or 'none' */
+  scrollbar-width: thin;
+  /* Thumb and track colors */
+  scrollbar-color: #888 #f1f1f1;
 }
 
 .btnBorder {
@@ -77,13 +77,13 @@ body {
   cursor: pointer;
   align-items: center;
   justify-content: space-between;
-  gap: 0.5rem; /* 8px */
+  gap: 0.5rem;
   border-radius: 3px;
-  border: 1px solid #9ca3af; /* gray-400 */
+  border: 1px solid #9ca3af;
   background-color: #e9e9ed;
-  padding: 0.25rem 0.75rem; /* py-1 px-3 */
-  font-size: 0.875rem; /* text-sm */
-  font-weight: 600; /* font-semibold */
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
   transition: all 0.3s ease;
 }
 

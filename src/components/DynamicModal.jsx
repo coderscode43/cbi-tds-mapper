@@ -1,5 +1,5 @@
-import { LogOut, TriangleAlert, X } from "lucide-react";
 import { createPortal } from "react-dom";
+import UniversalAssets from "./component/UniversalAssets";
 
 const DynamicModal = ({
   title,
@@ -19,16 +19,19 @@ const DynamicModal = ({
     >
       <div className="relative w-full max-w-[23rem] rounded-xl bg-white p-6 shadow-xl transition-all">
         <div className="absolute top-5 right-5 cursor-pointer">
-          <X size={22} onClick={() => closeModal()} />
+          <UniversalAssets asset={"x"} iconHandler={() => closeModal()} />
         </div>
         <div className="flex flex-col items-center justify-center gap-2 text-center">
           {type === "delete" ? (
             <div className="rounded-full bg-amber-100 p-3">
-              <TriangleAlert className="text-amber-600" size={22} />
+              <UniversalAssets
+                asset={"triangleAlert"}
+                className="text-amber-600"
+              />
             </div>
           ) : (
             <div className="rounded-full bg-red-100 p-3">
-              <LogOut className="text-red-600" size={22} />
+              <UniversalAssets asset={"logout"} className="text-red-600" />
             </div>
           )}
           <p className="text-xl font-medium">{title}</p>

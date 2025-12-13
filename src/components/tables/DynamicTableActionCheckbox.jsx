@@ -1,7 +1,7 @@
-import React from "react";
 import common from "@/common/common";
-import StickyScrollbarWrapper from "../StickyScrollbarWrapper";
 import { anyFileDownload } from "@/lib/utils";
+import UniversalAssets from "../component/UniversalAssets";
+import StickyScrollbarWrapper from "../StickyScrollbarWrapper";
 
 const DynamicTableCheckBoxAction = ({
   entity,
@@ -166,10 +166,11 @@ const DynamicTableCheckBoxAction = ({
                             {key === "action" &&
                             data.fileType !== "File folder" ? (
                               // download button Icon shown if the the filetype if filefolder
-                              <i
-                                className="fa-solid fa-download cursor-pointer text-lg"
-                                onClick={() => handleDownloadFile(data)}
-                              ></i>
+                              <UniversalAssets
+                                asset={"download"}
+                                className="cursor-pointer text-lg"
+                                iconHandler={() => handleDownloadFile(data)}
+                              ></UniversalAssets>
                             ) : formatter ? (
                               formatter(data[key])
                             ) : (

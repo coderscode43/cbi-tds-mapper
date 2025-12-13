@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import statusContext from "@/context/statusContext";
 import useLockBodyScroll from "@/hooks/useLockBodyScroll";
+import UniversalAssets from "../component/UniversalAssets";
 
 const ErrorModal = () => {
   const { errorModal, setErrorModal, errorMessage } = useContext(statusContext);
@@ -15,8 +16,13 @@ const ErrorModal = () => {
     >
       <div className="relative w-full max-w-[17rem] rounded-2xl bg-white px-4 pt-8 pb-6 shadow-xl transition-all">
         {/* Header with image */}
-        <div className="flex flex-col items-center justify-center gap-2">
-          <i className="fa-solid fa-circle-xmark text-5xl text-red-600"></i>
+        <div className="flex flex-col items-center justify-center gap-1">
+          <UniversalAssets
+            asset={"circleX"}
+            className={"fill-red-600 text-white"}
+            size={58}
+            stroke={1.3}
+          />
           <p className="text-2xl font-medium">Error</p>
         </div>
 

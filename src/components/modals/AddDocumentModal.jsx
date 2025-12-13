@@ -1,9 +1,10 @@
 import common from "@/common/common";
+import statusContext from "@/context/statusContext";
+import { errorMessage } from "@/lib/utils";
 import { useContext, useState } from "react";
 import { useParams } from "react-router-dom";
-import statusContext from "@/context/statusContext";
+import UniversalAssets from "../component/UniversalAssets";
 import Toast from "../Toast";
-import { errorMessage } from "@/lib/utils";
 
 const AddDocumentModal = ({
   setFileListData,
@@ -62,7 +63,7 @@ const AddDocumentModal = ({
             onClick={() => closeAddDocumentModal(false)}
             className="cursor-pointer text-xl text-gray-500 transition hover:text-gray-800"
           >
-            <i className="fa-solid fa-xmark"></i>
+            <UniversalAssets asset={"x"} />
           </button>
         </div>
 
@@ -84,7 +85,7 @@ const AddDocumentModal = ({
             onClick={() => closeAddDocumentModal(false)}
             className="flex cursor-pointer items-center gap-2 rounded-md bg-red-600 px-4 py-2 text-white hover:bg-red-700"
           >
-            <i className="fa-solid fa-xmark"></i> <span>Cancel</span>
+            <UniversalAssets asset={"x"} /> <span>Cancel</span>
           </button>
           <button
             onClick={() => handleAddDocumentFolder("")}
@@ -95,7 +96,7 @@ const AddDocumentModal = ({
                 : "cursor-not-allowed bg-blue-300"
             }`}
           >
-            <i className="fa-solid fa-folder-plus"></i>
+            <UniversalAssets asset={"folderPlus"} className={"fill-white"} />
             <span>Add Document</span>
           </button>
         </div>
