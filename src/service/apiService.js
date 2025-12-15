@@ -1,4 +1,5 @@
 import axios from "axios";
+import { errorToast } from "@/components/component/toast.jsx";
 
 axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL ?? "/";
 axios.defaults.withCredentials = true;
@@ -181,14 +182,13 @@ export const importFile = async (selectedDocument, subpanel, param) => {
 export const logout = async () => {
   try {
     const response = await axios.post("/logout");
-    const currentUrl = window.location.href;
+    const originURl = window.location.origin;
 
-    const redirectUrl = `${response.data}?redirect=${encodeURIComponent(
-      currentUrl
+    window.location.origin = `${response.data}?redirect=${encodeURIComponent(
+      originURl
     )}`;
-
-    window.location.href = redirectUrl;
   } catch (error) {
     console.error("Logout failed:", error);
+    errorToast("Logout Failed!!");
   }
 };

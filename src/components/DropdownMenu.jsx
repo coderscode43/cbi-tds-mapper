@@ -56,8 +56,8 @@ const DropdownMenu = () => {
           description="Do you want to logout !!!"
           isModalOpen={() => setIsModalOpen(true)}
           closeModal={closeModal}
-          handler={() => {
-            logout();
+          handler={async () => {
+            await logout();
           }}
         />
       )}
