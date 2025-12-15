@@ -9,7 +9,7 @@ const __dirname = path.dirname(__filename); // Get the name of the directory
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/TDSMapper",
+  base: "/CBIMapper",
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {

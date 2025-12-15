@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import StaticDataContext from "./staticDataContext";
 
-axios.defaults.baseURL = (import.meta.env.VITE_API_BASE_URL ?? "") + "/";
+axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL?.replace(/\/$/, "");
 axios.defaults.withCredentials = true;
 
 const StaticDataProvider = ({ children }) => {

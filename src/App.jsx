@@ -27,7 +27,7 @@ const App = () => {
       </>
     ),
     {
-      basename: "/TDSMapper",
+      basename: "/CBIMapper",
     }
   );
   return <RouterProvider router={router} />;

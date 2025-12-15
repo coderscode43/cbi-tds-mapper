@@ -181,12 +181,14 @@ export const importFile = async (selectedDocument, subpanel, param) => {
 
 export const logout = async () => {
   try {
-    const response = await axios.post("/logout");
-    const originURl = window.location.origin;
+    const response = await axios.post("logout"); // no leading /
 
-    window.location.origin = `${response.data}?redirect=${encodeURIComponent(
-      originURl
-    )}`;
+    const basePath = import.meta.env.BASE_URL;
+    const redirectUrl = window.location.origin + basePath.replace(/\/$/, "");
+
+    window.location.replace(
+      `${response.data}?redirect=${encodeURIComponent(redirectUrl)}`
+    );
   } catch (error) {
     console.error("Logout failed:", error);
     errorToast("Logout Failed!!");
