@@ -353,7 +353,7 @@ const Deposit = () => {
               >
                 <img
                   className="h-7 w-7 mix-blend-multiply"
-                  src={`${import.meta.env.BASE_URL}/images/gificons/openfile.gif`}
+                  src={`${import.meta.env.BASE_URL}/images/gificons/OpenFolder.gif`}
                   alt="Refresh"
                 />
                 <span>Open Additional Folder</span>
@@ -673,7 +673,7 @@ const Deposit = () => {
               className="flex cursor-pointer items-center gap-3 rounded-md border border-blue-200 bg-blue-50 px-3 py-2 font-medium shadow-sm transition-all duration-300 hover:bg-blue-100 hover:shadow-md"
             >
               <img
-                src={`${import.meta.env.BASE_URL}/images/gificons/generateupdatefile.gif`}
+                src={`${import.meta.env.BASE_URL}/images/gificons/GenerateExcel.gif`}
                 className="h-7 w-7 mix-blend-multiply"
               />
               <span>Get Previous Month TDS Dump</span>
@@ -684,7 +684,7 @@ const Deposit = () => {
               className="flex cursor-pointer items-center gap-3 rounded-md border border-blue-200 bg-blue-50 px-3 py-2 font-medium shadow-sm transition-all duration-300 hover:bg-blue-100 hover:shadow-md"
             >
               <img
-                src={`${import.meta.env.BASE_URL}/images/gificons/Excelfile.gif`}
+                src={`${import.meta.env.BASE_URL}/images/gificons/ValidateExcel.gif`}
                 className="h-7 w-7 mix-blend-multiply"
               />
               <span>GL Reconciliation</span>
@@ -711,7 +711,7 @@ const Deposit = () => {
               className="flex cursor-pointer items-center gap-3 rounded-md border border-blue-200 bg-blue-50 px-3 py-2 font-medium shadow-sm transition-all duration-300 hover:bg-blue-100 hover:shadow-md"
             >
               <img
-                src={`${import.meta.env.BASE_URL}/images/gificons/Excelfile.gif`}
+                src={`${import.meta.env.BASE_URL}/images/gificons/uploadfile.gif`}
                 className="h-7 w-7 mix-blend-multiply"
               />
               <span>Upload Data</span>
@@ -730,7 +730,7 @@ const Deposit = () => {
               className="flex cursor-pointer items-center gap-3 rounded-md border border-blue-200 bg-blue-50 px-3 py-2 font-medium shadow-sm transition-all duration-300 hover:bg-blue-100 hover:shadow-md"
             >
               <img
-                src={`${import.meta.env.BASE_URL}/images/gificons/generatefile.gif`}
+                src={`${import.meta.env.BASE_URL}/images/gificons/DownloadFile.gif`}
                 className="h-7 w-7 mix-blend-multiply"
               />
               <span>Download Current Month Data</span>
@@ -769,7 +769,7 @@ const Deposit = () => {
               className="flex cursor-pointer items-center gap-3 rounded-md border border-blue-200 bg-blue-50 px-3 py-2 font-medium shadow-sm transition-all duration-300 hover:bg-blue-100 hover:shadow-md"
             >
               <img
-                src={`${import.meta.env.BASE_URL}/images/gificons/generateupdatefile.gif`}
+                src={`${import.meta.env.BASE_URL}/images/gificons/DownloadFile.gif`}
                 className="h-7 w-7 mix-blend-multiply"
               />
               <span>Download Refund Details</span>

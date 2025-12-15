@@ -341,7 +341,7 @@ const Withdrawal = () => {
             >
               <img
                 className="h-7 w-7 mix-blend-multiply"
-                src={`${import.meta.env.BASE_URL}/images/gificons/openfile.gif`}
+                src={`${import.meta.env.BASE_URL}/images/gificons/OpenFolder.gif`}
                 alt="Refresh"
               />
               <span>Open Additional Folder</span>
@@ -672,7 +672,7 @@ const Withdrawal = () => {
               className="flex cursor-pointer items-center gap-3 rounded-md border border-blue-200 bg-blue-50 px-3 py-2 font-medium shadow-sm transition-all duration-300 hover:bg-blue-100 hover:shadow-md"
             >
               <img
-                src={`${import.meta.env.BASE_URL}/images/gificons/generateexcelfile.gif`}
+                src={`${import.meta.env.BASE_URL}/images/gificons/uploadfile.gif`}
                 className="h-7 w-7 mix-blend-multiply"
               />
               <span>Upload On Web</span>
@@ -683,7 +683,7 @@ const Withdrawal = () => {
               className="flex cursor-pointer items-center gap-3 rounded-md border border-blue-200 bg-blue-50 px-3 py-2 font-medium shadow-sm transition-all duration-300 hover:bg-blue-100 hover:shadow-md"
             >
               <img
-                src={`${import.meta.env.BASE_URL}/images/gificons/generateexcelfile.gif`}
+                src={`${import.meta.env.BASE_URL}/images/gificons/generateupdatefile.gif`}
                 className="h-7 w-7 mix-blend-multiply"
               />
               <span>Validate & Get S.D</span>
@@ -708,7 +708,7 @@ const Withdrawal = () => {
               className="flex cursor-pointer items-center gap-3 rounded-md border border-blue-200 bg-blue-50 px-3 py-2 font-medium shadow-sm transition-all duration-300 hover:bg-blue-100 hover:shadow-md"
             >
               <img
-                src={`${import.meta.env.BASE_URL}/images/gificons/Excelfile.gif`}
+                src={`${import.meta.env.BASE_URL}/images/gificons/DownloadFile.gif`}
                 className="h-7 w-7 mix-blend-multiply"
               />
               <span>Download Raw Details</span>
@@ -733,7 +733,7 @@ const Withdrawal = () => {
               className="flex cursor-pointer items-center gap-3 rounded-md border border-blue-200 bg-blue-50 px-3 py-2 font-medium shadow-sm transition-all duration-300 hover:bg-blue-100 hover:shadow-md"
             >
               <img
-                src={`${import.meta.env.BASE_URL}/images/gificons/Excelfile.gif`}
+                src={`${import.meta.env.BASE_URL}/images/gificons/ValidateExcel.gif`}
                 className="h-7 w-7 mix-blend-multiply"
               />
               <span>GL Reconciliation</span>
@@ -744,7 +744,7 @@ const Withdrawal = () => {
               className="flex cursor-pointer items-center gap-3 rounded-md border border-blue-200 bg-blue-50 px-3 py-2 font-medium shadow-sm transition-all duration-300 hover:bg-blue-100 hover:shadow-md"
             >
               <img
-                src={`${import.meta.env.BASE_URL}/images/gificons/Excelfile.gif`}
+                src={`${import.meta.env.BASE_URL}/images/gificons/generatefile.gif`}
                 className="h-7 w-7 mix-blend-multiply"
               />
               <span>Get PAN</span>
@@ -755,7 +755,7 @@ const Withdrawal = () => {
               className="flex cursor-pointer items-center gap-3 rounded-md border border-blue-200 bg-blue-50 px-3 py-2 font-medium shadow-sm transition-all duration-300 hover:bg-blue-100 hover:shadow-md"
             >
               <img
-                src={`${import.meta.env.BASE_URL}/images/gificons/Excelfile.gif`}
+                src={`${import.meta.env.BASE_URL}/images/gificons/txtFile.gif`}
                 className="h-7 w-7 mix-blend-multiply"
               />
               <span>Generate TTUM & TIN File</span>
@@ -774,7 +774,7 @@ const Withdrawal = () => {
               className="flex cursor-pointer items-center gap-3 rounded-md border border-blue-200 bg-blue-50 px-3 py-2 font-medium shadow-sm transition-all duration-300 hover:bg-blue-100 hover:shadow-md"
             >
               <img
-                src={`${import.meta.env.BASE_URL}/images/gificons/generatefile.gif`}
+                src={`${import.meta.env.BASE_URL}/images/gificons/DownloadFile.gif`}
                 className="h-7 w-7 mix-blend-multiply"
               />
               <span>Download Current Month Details</span>
@@ -785,7 +785,7 @@ const Withdrawal = () => {
               className="flex cursor-pointer items-center gap-3 rounded-md border border-blue-200 bg-blue-50 px-3 py-2 font-medium shadow-sm transition-all duration-300 hover:bg-blue-100 hover:shadow-md"
             >
               <img
-                src={`${import.meta.env.BASE_URL}/images/gificons/generateexcelfile.gif`}
+                src={`${import.meta.env.BASE_URL}/images/gificons/txtFile.gif`}
                 className="h-7 w-7 mix-blend-multiply"
               />
               <span>Generate TTUM & TIN File</span>
@@ -813,7 +813,7 @@ const Withdrawal = () => {
               className="flex cursor-pointer items-center gap-3 rounded-md border border-blue-200 bg-blue-50 px-3 py-2 font-medium shadow-sm transition-all duration-300 hover:bg-blue-100 hover:shadow-md"
             >
               <img
-                src={`${import.meta.env.BASE_URL}/images/gificons/generateupdatefile.gif`}
+                src={`${import.meta.env.BASE_URL}/images/gificons/DownloadFile.gif`}
                 className="h-7 w-7 mix-blend-multiply"
               />
               <span>Download Refund Details</span>
