@@ -4,7 +4,7 @@ import { errorMessage } from "@/lib/utils";
 import { useContext, useState } from "react";
 import { useParams } from "react-router-dom";
 import UniversalAssets from "../component/UniversalAssets";
-import Toast from "../Toast";
+import { successToast } from "@/components/component/toast.jsx";
 
 const AddFolderModal = ({
   fileListData,
@@ -37,11 +37,9 @@ const AddFolderModal = ({
         selectedFolder,
         overrideValue
       );
-      console.log("response", response);
       setFileListData(response?.data?.entities);
       closeAddFolderModal();
-      Toast("Folder Added Successfully");
-      closeAddFolderModal();
+      successToast("Folder Added Successfully");
     } catch (error) {
       console.error("Add folder error:", error);
 
@@ -55,7 +53,7 @@ const AddFolderModal = ({
         showOverride(exceptionMsg, () => handleAddFolder("YES"));
         closeAddFolderModal();
       } else {
-        showError(errorMessage);
+        showError(errorMessage(error));
       }
     }
   };

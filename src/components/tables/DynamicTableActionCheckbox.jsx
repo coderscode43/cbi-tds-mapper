@@ -2,9 +2,11 @@ import common from "@/common/common";
 import { anyFileDownload } from "@/lib/utils";
 import UniversalAssets from "../component/UniversalAssets";
 import StickyScrollbarWrapper from "../StickyScrollbarWrapper";
+import TableLoadingSkeleton from "@/components/TableLoadingSkeleton.jsx";
 
 const DynamicTableCheckBoxAction = ({
   entity,
+  loading,
   tableHead,
   tableData,
   setFileListData,
@@ -84,6 +86,8 @@ const DynamicTableCheckBoxAction = ({
     ...tableHead,
   ];
 
+  const skeletonRows = 5;
+
   return (
     <div className="relative w-full">
       <div className="w-full overflow-clip rounded-md border border-gray-300">
@@ -121,9 +125,14 @@ const DynamicTableCheckBoxAction = ({
               </thead>
 
               <tbody>
-                {!lastLocation ||
-                (Object.keys(lastLocation).length === 1 &&
-                  Object.keys(lastLocation)[0] === "lastLocation") ? (
+                {loading ? (
+                  <TableLoadingSkeleton
+                    columns={enhancedTableHead.length}
+                    rows={skeletonRows}
+                  />
+                ) : !lastLocation ||
+                  (Object.keys(lastLocation).length === 1 &&
+                    Object.keys(lastLocation)[0] === "lastLocation") ? (
                   <tr>
                     <td
                       colSpan={enhancedTableHead.length}

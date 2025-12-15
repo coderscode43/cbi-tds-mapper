@@ -1,4 +1,3 @@
-import Toast from "../Toast";
 import common from "@/common/common.js";
 import { useContext, useState } from "react";
 import AddFolderModal from "./AddFolderModal";
@@ -8,6 +7,7 @@ import statusContext from "@/context/statusContext";
 import { errorMessage, fileSize } from "@/lib/utils";
 import DynamicTableCheckBoxAction from "../tables/DynamicTableActionCheckbox";
 import UniversalAssets from "../component/UniversalAssets";
+import { successToast } from "@/components/component/toast.jsx";
 
 const OpenFolderModal = ({
   onClose,
@@ -15,6 +15,7 @@ const OpenFolderModal = ({
   lastLocation,
   setLastLocation,
   setFileListData,
+  loading,
 }) => {
   const entity = "WorkingFile";
 
@@ -51,7 +52,7 @@ const OpenFolderModal = ({
       setSelectedRowsData([]);
     } catch (error) {
       showError(
-        `Cannot search.
+        `Cannot search
        ${error?.response?.data?.entityName || ""}
        ${errorMessage(error)}`
       );
@@ -69,7 +70,6 @@ const OpenFolderModal = ({
         currentLastLocation,
         lastPart
       );
-      console.log(response);
 
       const newData = response?.data?.entities || [];
       setFileListData(newData);
@@ -99,7 +99,6 @@ const OpenFolderModal = ({
         fileListData,
         selectedRowsData
       );
-      console.log(response.data);
 
       if (response?.data?.entities) {
         setFileListData(response?.data?.entities);
@@ -108,8 +107,8 @@ const OpenFolderModal = ({
         setSelectedRowsData([]);
       }
     } catch (error) {
-      showError("error.response.data.exceptionMsg");
       console.error("Error generating zip:", error);
+      showError(errorMessage(error));
     }
   };
 
@@ -131,7 +130,7 @@ const OpenFolderModal = ({
 
       if (response?.data?.entities) {
         setFileListData(response.data.entities);
-        Toast("Deleted Successfully");
+        successToast("Deleted Successfully");
 
         setSelectedRows([]);
         setSelectedRowsData([]);
@@ -219,6 +218,7 @@ const OpenFolderModal = ({
             {/* Table */}
             <DynamicTableCheckBoxAction
               entity={entity}
+              loading={loading}
               tableHead={tableHead}
               tableData={fileListData}
               selectedRows={selectedRows}

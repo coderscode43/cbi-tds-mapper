@@ -15,7 +15,7 @@ const DefaultRedirect = () => {
   }
 
   let panelName = "Import Raw Files";
-  let pageName = "Import Deductee";
+  let pageName = "Deposit";
 
   const searchObj = {
     pan: ClientPAN,

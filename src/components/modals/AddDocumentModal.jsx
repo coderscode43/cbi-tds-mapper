@@ -4,7 +4,7 @@ import { errorMessage } from "@/lib/utils";
 import { useContext, useState } from "react";
 import { useParams } from "react-router-dom";
 import UniversalAssets from "../component/UniversalAssets";
-import Toast from "../Toast";
+import { successToast } from "@/components/component/toast.jsx";
 
 const AddDocumentModal = ({
   setFileListData,
@@ -35,7 +35,7 @@ const AddDocumentModal = ({
       );
       setFileListData(response?.data?.entities);
       closeAddDocumentModal();
-      Toast("Document Added Successfully");
+      successToast("Document Added Successfully");
     } catch (error) {
       const message = error?.response?.data?.message;
       const exceptionMsg =
@@ -47,7 +47,7 @@ const AddDocumentModal = ({
         showOverride(exceptionMsg, () => handleAddDocumentFolder("YES"));
         closeAddDocumentModal();
       } else {
-        showError(errorMessage);
+        showError(errorMessage(error));
         console.error("Add document error:", error);
       }
     }

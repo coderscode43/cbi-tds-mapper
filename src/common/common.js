@@ -98,7 +98,7 @@ const common = {
 
     const formData = {
       ...parsedParams,
-      OverideFile: overrideValue,
+      OverrideFile: overrideValue,
     };
 
     const lastLocation = fileListData[0]?.lastLocation || "/";
@@ -125,7 +125,7 @@ const common = {
     const parsedParams = params ? JSON.parse(params) : {};
     const formData = {
       ...parsedParams,
-      OverideFile: overrideValue,
+      OverrideFile: overrideValue,
     };
 
     const lastLocation = fileListData[0]?.lastLocation || "/";
@@ -147,7 +147,7 @@ const common = {
     const parsedParams = params ? JSON.parse(params) : {};
     const formData = {
       ...parsedParams,
-      OverideFile: overrideValue,
+      OverrideFile: overrideValue,
     };
 
     const lastLocation = fileListData[0]?.lastLocation || "/";
