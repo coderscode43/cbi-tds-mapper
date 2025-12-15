@@ -95,7 +95,7 @@ const DynamicTableCheckBoxAction = ({
           <div className="custom-scrollbar max-h-[200px] overflow-y-auto">
             <table className="w-full text-[14px]">
               <thead
-                className="bg-[#1b54ff]"
+                className="bg-blue-900"
                 style={{
                   zIndex: "10",
                   position: "sticky",
@@ -106,13 +106,13 @@ const DynamicTableCheckBoxAction = ({
                   {enhancedTableHead.map(({ label }, index) => (
                     <th
                       key={index}
-                      className={`whitespace-wrap z-0 border-r-[1.5px] border-l-[1.5px] bg-[#1b54ff] p-2 text-white ${
+                      className={`whitespace-wrap z-0 border-r-[1.5px] border-l-[1.5px] bg-blue-900 p-2 text-white ${
                         index === enhancedTableHead.length - 1
-                          ? "bg-[#1b54ff]" // left border on first th
+                          ? "bg-blue-900" // left border on first th
                           : "border-l-gray-300"
                       } ${
                         index === tableHead.length - 1
-                          ? "bg-[#1b54ff]" // right border on last th
+                          ? "bg-blue-900" // right border on last th
                           : "border-r-gray-300"
                       }`}
                     >

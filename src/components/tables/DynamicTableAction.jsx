@@ -20,7 +20,7 @@ const DynamicTableAction = ({
         <StickyScrollbarWrapper>
           <table className="w-full text-[14px]">
             <thead
-              className="bg-blue-600"
+              className="bg-blue-900"
               style={{
                 zIndex: 9,
                 position: "sticky",
@@ -31,7 +31,7 @@ const DynamicTableAction = ({
                 {tableHead?.map(({ key, label }, index) => (
                   <th
                     key={key || index}
-                    className="border-[1.5px] border-gray-300 bg-blue-600 p-2 whitespace-nowrap text-white"
+                    className="border-[1.5px] border-gray-300 bg-blue-900 p-2 whitespace-nowrap text-white"
                   >
                     {label}
                   </th>
@@ -75,7 +75,7 @@ const DynamicTableAction = ({
                           className="w-auto border-[1.5px] border-gray-300 p-2 text-ellipsis whitespace-nowrap"
                         >
                           {key === "action" && data.status === "Pending" ? (
-                            // download button Icon shown if the the filetype if filefolder
+                            // download button Icon shown if the filetype is filefolder
                             <UniversalAssets
                               asset={"edit"}
                               className="cursor-pointer text-lg text-red-500"

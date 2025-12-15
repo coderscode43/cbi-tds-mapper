@@ -695,7 +695,7 @@ const Deposit = () => {
           <div className="space-y-5">
             <button
               onClick={() =>
-                handleOpenFolderClick("GetOverallAmount&CalculatedS.D")
+                handleProcessButtonClick("GetOverallAmount&CalculatedS.D")
               }
               className="flex cursor-pointer items-center gap-3 rounded-md border border-blue-200 bg-blue-50 px-3 py-2 font-medium shadow-sm transition-all duration-300 hover:bg-blue-100 hover:shadow-md"
             >
