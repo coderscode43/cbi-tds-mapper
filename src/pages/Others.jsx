@@ -341,7 +341,7 @@ const Others = () => {
             >
               <img
                 className="h-7 w-7 mix-blend-multiply"
-                src={`${import.meta.env.BASE_URL}/images/gificons/openfile.gif`}
+                src={`${import.meta.env.BASE_URL}/images/gificons/OpenFolder.gif`}
                 alt="Refresh"
               />
               <span>Open Additional Folder</span>
