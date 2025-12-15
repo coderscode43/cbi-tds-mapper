@@ -201,7 +201,7 @@ const Others = () => {
       month: updatedSearchParams.month || crtMonth,
       quarter: updatedSearchParams.quarter || crtQuarter,
       typeOfForm: updatedSearchParams.typeOfForm || searchParams.typeOfForm,
-      panelName: panelName.panelName,
+      panelName: panelName,
       pageName: pageName,
     };
 
