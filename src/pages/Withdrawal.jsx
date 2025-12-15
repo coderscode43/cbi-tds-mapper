@@ -397,14 +397,14 @@ const Withdrawal = () => {
                     <h4 className="mb-10 font-medium">
                       Import Current Month Details
                     </h4>
-                    <label>Select Folder</label>
+                    <label className="block">Select Folder</label>
                     <input
                       type="file"
                       id="importFile"
                       name="importFile"
                       ref={(el) => (fileInputRef.current[0] = el)}
                       onChange={(e) => setSelectedDocuments(e.target.files[0])}
-                      className="w-full cursor-pointer rounded-md border border-gray-300 bg-white px-3 py-2 text-sm placeholder:text-gray-500 focus:outline-none"
+                      className="w-72 cursor-pointer rounded-md border border-gray-300 bg-white px-3 py-2 text-sm placeholder:text-gray-500 focus:outline-none"
                     />
                   </div>
                   <button
@@ -423,14 +423,14 @@ const Withdrawal = () => {
                 <div className="flex w-full items-end gap-5">
                   <div>
                     <h4 className="mb-10 font-medium">Import Refund Details</h4>
-                    <label>Select Folder</label>
+                    <label className="block">Select Folder</label>
                     <input
                       type="file"
                       id="importFile"
                       name="importFile"
                       ref={(el) => (fileInputRef.current[0] = el)}
                       onChange={(e) => setSelectedDocuments(e.target.files[0])}
-                      className="w-full cursor-pointer rounded-md border border-gray-300 bg-white px-3 py-2 text-sm placeholder:text-gray-500 focus:outline-none"
+                      className="w-72 cursor-pointer rounded-md border border-gray-300 bg-white px-3 py-2 text-sm placeholder:text-gray-500 focus:outline-none"
                     />
                   </div>
                   <button
@@ -454,14 +454,14 @@ const Withdrawal = () => {
                 <div className="flex w-full items-end gap-5">
                   <div>
                     <h4 className="mb-10 font-medium">Import BGL Balance</h4>
-                    <label>Select Folder</label>
+                    <label className="block">Select Folder</label>
                     <input
                       type="file"
                       id="importFile"
                       name="importFile"
                       ref={(el) => (fileInputRef.current[0] = el)}
                       onChange={(e) => setSelectedDocuments(e.target.files[0])}
-                      className="w-full cursor-pointer rounded-md border border-gray-300 bg-white px-3 py-2 text-sm placeholder:text-gray-500 focus:outline-none"
+                      className="w-72 cursor-pointer rounded-md border border-gray-300 bg-white px-3 py-2 text-sm placeholder:text-gray-500 focus:outline-none"
                     />
                   </div>
                   <button
@@ -482,14 +482,14 @@ const Withdrawal = () => {
                     <h4 className="mb-10 font-medium">
                       Import BGL Transaction
                     </h4>
-                    <label>Select Folder</label>
+                    <label className="block">Select Folder</label>
                     <input
                       type="file"
                       id="importFile"
                       name="importFile"
                       ref={(el) => (fileInputRef.current[0] = el)}
                       onChange={(e) => setSelectedDocuments(e.target.files[0])}
-                      className="w-full cursor-pointer rounded-md border border-gray-300 bg-white px-3 py-2 text-sm placeholder:text-gray-500 focus:outline-none"
+                      className="w-72 cursor-pointer rounded-md border border-gray-300 bg-white px-3 py-2 text-sm placeholder:text-gray-500 focus:outline-none"
                     />
                   </div>
                   <button
@@ -513,14 +513,14 @@ const Withdrawal = () => {
                 <div className="flex w-full items-end gap-5">
                   <div>
                     <h4 className="mb-10 font-medium">Import GH15 File</h4>
-                    <label>Select Folder</label>
+                    <label className="block">Select Folder</label>
                     <input
                       type="file"
                       id="importFile"
                       name="importFile"
                       ref={(el) => (fileInputRef.current[0] = el)}
                       onChange={(e) => setSelectedDocuments(e.target.files[0])}
-                      className="w-full cursor-pointer rounded-md border border-gray-300 bg-white px-3 py-2 text-sm placeholder:text-gray-500 focus:outline-none"
+                      className="w-72 cursor-pointer rounded-md border border-gray-300 bg-white px-3 py-2 text-sm placeholder:text-gray-500 focus:outline-none"
                     />
                   </div>
                   <button
@@ -539,14 +539,14 @@ const Withdrawal = () => {
                 <div className="flex w-full items-end gap-5">
                   <div>
                     <h4 className="mb-10 font-medium">Import LDC File</h4>
-                    <label>Select Folder</label>
+                    <label className="block">Select Folder</label>
                     <input
                       type="file"
                       id="importFile"
                       name="importFile"
                       ref={(el) => (fileInputRef.current[0] = el)}
                       onChange={(e) => setSelectedDocuments(e.target.files[0])}
-                      className="w-full cursor-pointer rounded-md border border-gray-300 bg-white px-3 py-2 text-sm placeholder:text-gray-500 focus:outline-none"
+                      className="w-72 cursor-pointer rounded-md border border-gray-300 bg-white px-3 py-2 text-sm placeholder:text-gray-500 focus:outline-none"
                     />
                   </div>
                   <button
@@ -570,14 +570,14 @@ const Withdrawal = () => {
                 <div className="flex w-full items-end gap-5">
                   <div>
                     <h4 className="mb-10 font-medium">Import PAN Details</h4>
-                    <label>Select Folder</label>
+                    <label className="block">Select Folder</label>
                     <input
                       type="file"
                       id="importFile"
                       name="importFile"
                       ref={(el) => (fileInputRef.current[0] = el)}
                       onChange={(e) => setSelectedDocuments(e.target.files[0])}
-                      className="w-full cursor-pointer rounded-md border border-gray-300 bg-white px-3 py-2 text-sm placeholder:text-gray-500 focus:outline-none"
+                      className="w-72 cursor-pointer rounded-md border border-gray-300 bg-white px-3 py-2 text-sm placeholder:text-gray-500 focus:outline-none"
                     />
                   </div>
                   <button
@@ -596,14 +596,14 @@ const Withdrawal = () => {
                 <div className="flex w-full items-end gap-5">
                   <div>
                     <h4 className="mb-10 font-medium">Import ITR File</h4>
-                    <label>Select Folder</label>
+                    <label className="block">Select Folder</label>
                     <input
                       type="file"
                       id="importFile"
                       name="importFile"
                       ref={(el) => (fileInputRef.current[0] = el)}
                       onChange={(e) => setSelectedDocuments(e.target.files[0])}
-                      className="w-full cursor-pointer rounded-md border border-gray-300 bg-white px-3 py-2 text-sm placeholder:text-gray-500 focus:outline-none"
+                      className="w-72 cursor-pointer rounded-md border border-gray-300 bg-white px-3 py-2 text-sm placeholder:text-gray-500 focus:outline-none"
                     />
                   </div>
                   <button
@@ -626,14 +626,14 @@ const Withdrawal = () => {
               >
                 <div>
                   <h4 className="mb-10 font-medium">TDS Exception</h4>
-                  <label>Select Folder</label>
+                  <label className="block">Select Folder</label>
                   <input
                     type="file"
                     id="importFile"
                     name="importFile"
                     ref={(el) => (fileInputRef.current[0] = el)}
                     onChange={(e) => setSelectedDocuments(e.target.files[0])}
-                    className="w-full cursor-pointer rounded-md border border-gray-300 bg-white px-3 py-2 text-sm placeholder:text-gray-500 focus:outline-none"
+                    className="w-72 cursor-pointer rounded-md border border-gray-300 bg-white px-3 py-2 text-sm placeholder:text-gray-500 focus:outline-none"
                   />
                 </div>
                 <button

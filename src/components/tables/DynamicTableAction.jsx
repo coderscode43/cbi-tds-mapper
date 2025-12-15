@@ -16,7 +16,7 @@ const DynamicTableAction = ({
 
   return (
     <div className="relative w-full">
-      <div className="max-h-[200px] w-full overflow-y-auto rounded-md border border-gray-200">
+      <div className="custom-scrollbar max-h-[200px] w-full overflow-y-auto rounded-md border border-gray-200">
         <StickyScrollbarWrapper>
           <table className="w-full text-[14px]">
             <thead

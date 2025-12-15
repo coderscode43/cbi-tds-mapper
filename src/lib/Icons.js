@@ -1,7 +1,7 @@
 import {
   IconAlertTriangle,
   IconArrowLeft,
-  IconCategory,
+  IconCategoryPlus,
   IconChevronLeft,
   IconChevronRight,
   IconCircleCheck,
@@ -26,7 +26,7 @@ import {
 export const Icons = {
   moneybagPlus: IconMoneybagPlus,
   moneybagMinus: IconMoneybagMinus,
-  category: IconCategory,
+  categoryPlus: IconCategoryPlus,
   setting: IconSettings,
   chevronLeft: IconChevronLeft,
   chevronRight: IconChevronRight,

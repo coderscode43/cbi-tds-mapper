@@ -2,3 +2,8 @@ onlyBuiltDependencies:
   - '@swc/core'
   - '@tailwindcss/oxide'
   - esbuild
+
+overrides:
+  js-yaml@>=4.0.0 <4.1.1: '>=4.1.1'
+  tar@=7.5.1: '>=7.5.2'
+  vite@>=7.1.0 <=7.1.10: '>=7.1.11'

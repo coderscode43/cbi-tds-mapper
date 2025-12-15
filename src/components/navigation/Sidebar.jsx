@@ -21,7 +21,7 @@ const navItems = [
     id: "others",
     label: "Others",
     page: "others",
-    icon: "category",
+    icon: "categoryPlus",
   },
   {
     id: "settings",
@@ -75,7 +75,7 @@ const Sidebar = ({ sideBarOpen }) => {
                       sideBarOpen ? "justify-between" : "justify-center",
                       active
                         ? "bg-blue-100 font-medium text-blue-600"
-                        : "hover:bg-white hover:text-blue-600 hover:shadow-sm",
+                        : "hover:bg-white hover:text-blue-600",
                     ].join(" ")}
                   >
                     {/* LABEL */}
@@ -88,6 +88,7 @@ const Sidebar = ({ sideBarOpen }) => {
                     {/* ICON */}
                     <UniversalAssets
                       asset={icon}
+                      size={24}
                       className={active ? "text-blue-600" : "text-gray-600"}
                     />
                   </NavLink>
